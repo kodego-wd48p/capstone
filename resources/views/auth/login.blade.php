@@ -16,7 +16,7 @@
                             <div class="md:mx-6 md:p-12">
                                 <!-- Logo -->
                                 <div class="text-center">
-                                    <img class="mx-auto w-48" src="" alt="logo" />
+                                    <img src="{{ asset('/images/triologo.png') }}" class="card-img-top" alt="image of the company" style="width: 70px; height: auto;">
                                     <h4 class="mb-12 mt-1 pb-1 text-xl font-semibold">
                                         We are The Trio Team
                                     </h4>
@@ -25,6 +25,7 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
+                         {{-- CSRF - CROSS SITE REQUEST FORGERY --}}
 
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
