@@ -67,6 +67,11 @@
                                     {{ __('Register') }}
                                 </button>
                             </div>
+                            @if (Route::has('login'))
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                        @endif
+
                         </div>
                     </form>
                 </div>
