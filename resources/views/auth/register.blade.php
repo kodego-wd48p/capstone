@@ -78,11 +78,18 @@
                                     {{ __('Register') }}
                                 </button>
                             </div>
-                            @if (Route::has('login'))
-                            <button type="submit" class="btn btn-primary">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                        @endif
+
+                            <div class="row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    @if (Route::has('login'))
+                                    <button type="submit" class="btn btn-primary">
+                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Back to Login') }}</a>
+                                    </li>
+                                @endif
+                                </div>
+                        
+
+                         
 
                         </div>
 

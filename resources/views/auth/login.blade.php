@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="split left">
-    <div class="centered">
+
 
 
 <section class="gradient-form h-full bg-neutral-200 dark:bg-neutral-700">
@@ -45,7 +44,7 @@
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('email') }}" required autocomplete="current-password">
 
                                 @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -102,8 +101,7 @@
 </div>
 
 
-<div class="split right">
-    <div class="centered">
+
 <!-- Right column container with background and description-->
 <div
 class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
