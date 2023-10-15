@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
 <section class="gradient-form h-full bg-neutral-200 dark:bg-neutral-700">
     <div class="container h-full p-10">
         <div class="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
