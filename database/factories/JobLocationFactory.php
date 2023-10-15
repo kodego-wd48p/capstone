@@ -2,12 +2,11 @@
 
 namespace Database\Factories;
 
-
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 use App\Models\User;
 
-class JobCategoryFactory extends Factory
+class JobLocationFactory extends Factory
 {
     /**
      * Define the model's default state.
