@@ -1,5 +1,5 @@
 <?php
-
+// //testing---------------------
 // use App\Models\Applicant;
 // use App\Models\ApplicantCredential;
 // use App\Models\ApplicationDetail;
@@ -8,6 +8,7 @@
 // use App\Models\JobInformation;
 // use App\Models\JobLocation;
 // use App\Models\User;
+
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\AddressController;
 // use App\Http\Controllers\ServiceController;
