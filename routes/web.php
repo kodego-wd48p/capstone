@@ -1,12 +1,6 @@
 <?php
 // //testing---------------------
 // use App\Models\Applicant;
-// use App\Models\ApplicantCredential;
-// use App\Models\ApplicationDetail;
-// use App\Models\Company;
-// use App\Models\JobCategory;
-// use App\Models\JobInformation;
-// use App\Models\JobLocation;
 // use App\Models\User;
 
 use Illuminate\Support\Facades\Route;
@@ -40,33 +34,11 @@ Route::get('/', function(){
 //    return User::all();
 // });
 
-// Route::get('/', function(){
-//     return JobCategory::all();
-//  });
-
-//  Route::get('/', function(){
-//     return JobLocation::all();
-//  });
- 
-//  Route::get('/', function(){
-//     return JobInformation::all();
-//  });
-
-//  Route::get('/', function(){
-//     return Company::all();
-//  });
-
 //  Route::get('/', function(){
 //     return Applicant::all();
 //  });
 
-//  Route::get('/', function(){
-//     return ApplicantCredential::all();
-//  });
 
-//  Route::get('/', function(){
-//     return ApplicationDetail::all();
-//  });
 
 // //routes for the service controller
 // Route::get('/services',[ServiceController::class, 'index']);

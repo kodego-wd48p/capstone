@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ApplicantCredential extends Model
+class PostActivity extends Model
 {
     use HasFactory;
-    protected $table = 'applicant_credentials';
+    protected $table = 'post_activities';
     public $timestamps = false;
 }

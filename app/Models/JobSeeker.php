@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class JobInformation extends Model
+class JobSeeker extends Model
 {
     use HasFactory;
-    protected $table = 'job_informations';
+    protected $table = 'job_seekers';
     public $timestamps = false;
 }
