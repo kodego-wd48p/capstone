@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
+<section class="intro">
+    <row>
+      <div class="col-lg-12 col-sm-80 left">
+                           
 
 <section class="gradient-form h-full bg-neutral-200 dark:bg-neutral-700">
     <div class="container h-full p-10">
@@ -110,27 +114,33 @@
 </div>
 </div>
 
+      </div>
+      <div class="col-lg-12 col-sm-12 right-custom">
+    
+                        <!-- Right column container with background and description-->
+                        <div
+                        class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
+                        style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)">
+                        <div class="px-4 py-6 text-white md:mx-6 md:p-12">
+                        <h4 class="mb-6 text-xl font-semibold">
+                            We are more than just a company
+                        </h4>
+                        <p class="text-sm">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex
+                            ea commodo consequat.
+                        </p>
+                        </div>
+
+                        </div>
+                        </div>
+        </div>
+      </row>
+    </section>
 
 
-<!-- Right column container with background and description-->
-<div
-class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)">
-<div class="px-4 py-6 text-white md:mx-6 md:p-12">
-  <h4 class="mb-6 text-xl font-semibold">
-    We are more than just a company
-  </h4>
-  <p class="text-sm">
-    Lorem ipsum dolor sit amet, consectetur adipisicing
-    elit, sed do eiusmod tempor incididunt ut labore et
-    dolore magna aliqua. Ut enim ad minim veniam, quis
-    nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat.
-  </p>
-</div>
 
-</div>
-</div>
-     
 
 @endsection
