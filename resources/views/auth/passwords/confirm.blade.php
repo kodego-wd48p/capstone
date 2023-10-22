@@ -40,16 +40,6 @@
                                 @endif
                             </div>
                         </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                @if (Route::has('login'))
-                                <button type="submit" class="btn btn-primary">
-                                    <a class="nav-link" href="{{ route('back to Login page') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-                            </div>
-
                     </form>
                 </div>
             </div>
