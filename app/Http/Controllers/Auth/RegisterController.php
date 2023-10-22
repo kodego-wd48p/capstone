@@ -38,7 +38,7 @@ class RegisterController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        $this->middleware('applicant');
     }
 
     /**
@@ -55,6 +55,22 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
+    public function select_a_role(){
+        return view('auth.select-a-user');
+    }
+
+    public function register_role($id){
+        if($id == 1 || $id == 2){
+        $user = User::find($id);
+
+        return view('auth.register',[
+            'user' => $user
+        ]);
+
+        }else{
+            abort(403);
+        }
+    }
 
     /**
      * Create a new user instance after a valid registration.
@@ -67,6 +83,7 @@ class RegisterController extends Controller
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'role_id' => $data['role_id'],
             'password' => Hash::make($data['password']),
         ]);
     }
