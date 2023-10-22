@@ -72,39 +72,43 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                            @if (Route::has('login'))
-                            <button type="submit" class="btn btn-primary">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                        @endif
+                            <div class="row mb-0">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary">
+                                        {{ __('Register') }}
+                                    </button>
+                                </div>
 
-                        </div>
+                                <div class="row mb-0">
+                                    <div class="col-md-6 offset-md-4">
+                                            @if (Route::has('login'))
+                                            <button type="submit" class="btn btn-primary">
+                                                <a class="nav-link" href="{{ route('login') }}">{{ __('Back to Login') }}</a>
+                                            </li>
+                                        @endif
+                                    </div>
+    
+                            </div>
 
 
                         <div class="split right">
                             <div class="centered">
                         <!-- Right column container with background and description-->
-                        <div
-                        class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
-                        style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)">
-                        <div class="px-4 py-6 text-white md:mx-6 md:p-12">
-                          <h4 class="mb-6 text-xl font-semibold">
-                            We are more than just a company
-                          </h4>
-                          <p class="text-sm">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex
-                            ea commodo consequat.
-                          </p>
-                        </div>
+                            <div
+                            class="flex items-center rounded-b-lg lg:w-6/12 lg:rounded-r-lg lg:rounded-bl-none"
+                            style="background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593)">
+                            <div class="px-4 py-6 text-white md:mx-6 md:p-12">
+                            <h4 class="mb-6 text-xl font-semibold">
+                                We are more than just a company
+                            </h4>
+                            <p class="text-sm">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat.
+                            </p>
+                            </div>
 
 
                     </form>

@@ -1,6 +1,8 @@
 <?php
+// //testing---------------------
+// use App\Models\Applicant;
+// use App\Models\User;
 
-use App\Models\Owner;
 use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\AddressController;
 // use App\Http\Controllers\ServiceController;
@@ -24,6 +26,19 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/', function(){
     return view('auth.login');
 });
+
+
+// // model factories-------------
+
+// Route::get('/', function(){
+//    return User::all();
+// });
+
+//  Route::get('/', function(){
+//     return Applicant::all();
+//  });
+
+
 
 // //routes for the service controller
 // Route::get('/services',[ServiceController::class, 'index']);
