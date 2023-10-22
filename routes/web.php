@@ -4,9 +4,8 @@
 // use App\Models\User;
 
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\Auth\RegisterController;
-use App\Models\UserType;
+// use App\Http\Controllers\AddressController;
+// use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -26,42 +25,14 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/', function(){
     return view('auth.login');
-})->middleware('user');
-
-// Route::get('/', function(){
-//     return view('auth.register');   
-// })->middleware('applicant');
-
-
-
-
-
-
-Route::get('/select-a-user', function(){
-   return view('auth.select-a-user');
 });
 
-//  Route::get('/register/{id}', function($id){
 
-//     if($id == 1 || $id == 2){
-//       $usertype = UserType::find($id);
+// // model factories-------------
 
-//       return view('auth.register');
-
-//     }else{
-//         abort(404)
-//     }
-    
-//  }); 
-
-
-
-
-// Route::get('/select-a-user', [RegisterController::class, 'select_a_user']);
-
-// Route::get('/register/{id}', [RegisterController::class, 'register_user']);
-
-
+// Route::get('/', function(){
+//    return User::all();
+// });
 
 //  Route::get('/', function(){
 //     return Applicant::all();

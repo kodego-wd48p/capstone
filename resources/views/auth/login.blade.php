@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
 <section class="gradient-form h-full bg-neutral-200 dark:bg-neutral-700">
     <div class="container h-full p-10">
         <div class="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
@@ -80,12 +78,24 @@
 
                                  <!--Register button-->
                                      <div class="flex items-center justify-between pb-6">
-                                     <p class="mb-0 mr-2">Don't have an account?</p>
+                                     {{-- <p class="mb-0 mr-2">Don't have an account?</p> --}}
 
                                     @if (Route::has('register'))
-                                    <button type="submit" class="btn btn-primary">
-                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                     </li>
+                                    <div class="dropdown">
+                                        <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Need an account? REGISTER HERE
+                                        </a>
+                                      
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                          <li><a class="dropdown-item" href="{{ route('register') }}">{{ __('Register for applicant') }}</a></li>
+                                          <li><a class="dropdown-item" href="/register/2">Recruiter</a></li>
+                                        </ul>
+                                      </div>
+
+
+                                    {{-- <button type="submit" class="btn btn-primary">
+                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Need an account? Register') }}</a>
+                                     </li> --}}
                                  @endif
 
                             </div>
