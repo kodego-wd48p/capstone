@@ -3,9 +3,8 @@
 // use App\Models\Applicant;
 // use App\Models\User;
 
+use App\Http\Controllers\JobController;
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\AddressController;
-// use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -28,6 +27,18 @@ Route::get('/', function(){
 });
 
 
+
+//routes for the jobpost controller
+Route::get('/jobs',[JobController::class, 'index']);
+Route::get('/job/{id}',[JobController::class, 'show']);
+Route::get('/job',[JobController::class, 'create']);
+Route::get('/job/{id}/edit',[JobController::class, 'edit']);
+
+Route::post('/job', [JobController::class, 'store']);
+Route::put('/job/{id}/edit', [JobController::class, 'update']);
+Route::delete('/job/{id}', [JobController::class, 'destroy']);
+
+
 // // model factories-------------
 
 // Route::get('/', function(){
@@ -38,14 +49,3 @@ Route::get('/', function(){
 //     return Applicant::all();
 //  });
 
-
-
-// //routes for the service controller
-// Route::get('/services',[ServiceController::class, 'index']);
-// Route::get('/service/{id}',[ServiceController::class, 'show']);
-// Route::get('/service',[ServiceController::class, 'create']);
-// Route::get('/service/{id}/edit', [ServiceController::class, 'edit']);
-
-// Route::post('/service', [ServiceController::class, 'store']);
-// Route::put('/service/{id}/edit', [ServiceController::class, 'update']);
-// Route::delete('/service/{id}', [ServiceController::class, 'destroy']);
