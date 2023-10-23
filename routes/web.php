@@ -1,9 +1,9 @@
 <?php
 // //testing---------------------
-// use App\Models\Applicant;
-// use App\Models\User;
+use App\Models\Job;
 
 use App\Http\Controllers\JobController;
+use App\Http\Controllers\JobSeekerController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -28,7 +28,7 @@ Route::get('/', function(){
 
 
 
-//routes for the jobpost controller
+//routes for the jobs controller
 Route::get('/jobs',[JobController::class, 'index']);
 Route::get('/job/{id}',[JobController::class, 'show']);
 Route::get('/job',[JobController::class, 'create']);
@@ -38,14 +38,21 @@ Route::post('/job', [JobController::class, 'store']);
 Route::put('/job/{id}/edit', [JobController::class, 'update']);
 Route::delete('/job/{id}', [JobController::class, 'destroy']);
 
+//routes for the jobseeker controller
+Route::get('/jobseekers',[JobSeekerController::class, 'index']);
+Route::get('/jobseeker/{id}',[JobSeekerController::class, 'show']);
+Route::get('/jobseeker',[JobSeekerController::class, 'create']);
+Route::get('/jobseeker/{id}/edit',[JobSeekerController::class, 'edit']);
 
-// // model factories-------------
+Route::post('/jobseeker', [JobSeekerController::class, 'store']);
+Route::put('/jobseeker/{id}/edit', [JobSeekerController::class, 'update']);
+Route::delete('/jobseeker/{id}', [JobSeekerController::class, 'destroy']);
 
-// Route::get('/', function(){
-//    return User::all();
-// });
 
-//  Route::get('/', function(){
-//     return Applicant::all();
-//  });
+// // model ,factories, seeder-------------
+
+Route::get('/', function(){
+   return Job::all();
+});
+
 

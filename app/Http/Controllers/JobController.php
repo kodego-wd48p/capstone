@@ -14,7 +14,7 @@ class JobController extends Controller
 
             $jobs = Job::all();
             
-            ddd($jobs);
+            // ddd($jobs);
 
         // return view('jobs.index',[
         //     'jobs' => $jobs
